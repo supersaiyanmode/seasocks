@@ -1,13 +1,6 @@
 cmake_minimum_required(VERSION 3.3)
 project(Seasocks VERSION 1.4.4)
 
-if(WIN32)
-    message(FATAL_ERROR "${PROJECT_NAME} does not support Windows")
-endif()
-if(APPLE)
-    message(FATAL_ERROR "${PROJECT_NAME} does not support Apple platforms")
-endif()
-
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 option(SEASOCKS_SHARED "Build seasocks as a shared library" "${BUILD_SHARED_LIBS}")
